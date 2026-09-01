@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6a11cb,
+            #2575fc
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.pagina-cadastro {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.cadastro-container {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.logo {
+
+    text-align: center;
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.cadastro-container h1 {
+
+    text-align: center;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitulo {
+
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+
+    margin-bottom: 18px;
+}
+
+
+.campo label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.campo input {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.campo input:focus {
+
+    border-color: #2575fc;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 117, 252, 0.1);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao-cadastrar {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6a11cb,
+            #2575fc
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+
+.botao-cadastrar:hover {
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.mensagem {
+
+    min-height: 20px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-texto {
+
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+}
+
+
+.login-texto a {
+
+    color: #2575fc;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}

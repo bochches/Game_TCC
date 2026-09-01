@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | Professor</title>
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         MENU DO PROFESSOR
+    ================================== -->
+
+    <header class="menu-admin">
+
+
+        <div class="logo-admin">
+
+            🎓 Área do Professor
+
+        </div>
+
+
+        <nav class="navegacao-admin">
+
+
+            <a href="dashboard.html">
+                📊 Dashboard
+            </a>
+
+
+            <a href="alunos.html">
+                👨‍🎓 Alunos
+            </a>
+
+
+            <a href="questoes.html">
+                🧠 Questões
+            </a>
+
+
+            <a href="adicionar-questao.html">
+                ➕ Adicionar
+            </a>
+
+
+            <button
+                id="botaoSairAdmin"
+                class="botao-sair-admin"
+            >
+
+                ↪ Sair
+
+            </button>
+
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================
+         DASHBOARD
+    ================================== -->
+
+    <main class="conteudo">
+
+
+        <header class="cabecalho-dashboard">
+
+            <h1>
+                Dashboard da Turma
+            </h1>
+
+            <p>
+                Acompanhe o desempenho dos alunos.
+            </p>
+
+        </header>
+
+
+        <section class="cards">
+
+
+            <div class="card">
+
+                <span class="icone-card">
+                    👨‍🎓
+                </span>
+
+                <h2 id="totalAlunos">
+                    0
+                </h2>
+
+                <p>
+                    Alunos
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="icone-card">
+                    🎯
+                </span>
+
+                <h2 id="mediaTurma">
+                    0%
+                </h2>
+
+                <p>
+                    Média da turma
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="icone-card">
+                    📝
+                </span>
+
+                <h2 id="questoesRespondidas">
+                    0
+                </h2>
+
+                <p>
+                    Questões respondidas
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="tabela-container">
+
+
+            <h2>
+                Desempenho dos alunos
+            </h2>
+
+
+            <table>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Aluno
+                        </th>
+
+                        <th>
+                            Acertos
+                        </th>
+
+                        <th>
+                            Erros
+                        </th>
+
+                        <th>
+                            Aproveitamento
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="tabelaAlunos">
+
+                </tbody>
+
+
+            </table>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="../js/auth.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

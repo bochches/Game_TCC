@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caça às Proposições</title>
+
+    <link rel="stylesheet" href="style-tabela-verdade.css">
+</head>
+
+<body>
+
+    <main class="jogo-container">
+
+        <!-- CABEÇALHO -->
+
+        <header class="cabecalho">
+
+            <a href="../index.html" class="voltar">
+                ← Voltar
+            </a>
+
+            <div class="titulo">
+                <span>🧠</span>
+
+                <h1>Caça às Proposições</h1>
+            </div>
+
+            <div class="pontuacao">
+                ⭐ <span id="pontos">0</span>
+            </div>
+
+        </header>
+
+
+        <!-- PROGRESSO -->
+
+        <section class="progresso-container">
+
+            <div class="informacao-progresso">
+
+                <span id="numeroQuestao">
+                    Questão 1 de 3
+                </span>
+
+            </div>
+
+            <div class="barra-progresso">
+
+                <div
+                    class="progresso"
+                    id="barraProgresso">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREA DO JOGO -->
+
+        <section class="area-jogo">
+
+            <div class="cartao-questao">
+
+                <span class="categoria">
+                    DESAFIO LÓGICO
+                </span>
+
+                <h2>
+                    A frase abaixo é uma proposição?
+                </h2>
+
+
+                <!-- A QUESTÃO APARECERÁ AQUI -->
+
+                <div
+                    class="questao"
+                    id="textoQuestao">
+
+                    2 + 2 = 4
+
+                </div>
+
+
+                <!-- ALTERNATIVAS -->
+
+                <div class="alternativas">
+
+                    <button
+                        class="alternativa"
+                        data-resposta="sim">
+
+                        Sim, é uma proposição
+
+                    </button>
+
+
+                    <button
+                        class="alternativa"
+                        data-resposta="nao">
+
+                        Não é uma proposição
+
+                    </button>
+
+                </div>
+
+
+                <!-- FEEDBACK -->
+
+                <div
+                    class="feedback"
+                    id="feedback">
+                </div>
+
+
+                <!-- BOTÃO PRÓXIMA -->
+
+                <button
+                    id="botaoProxima"
+                    class="botao-proxima">
+
+                    Próxima questão →
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- TELA FINAL -->
+
+    <section
+        class="tela-final"
+        id="telaFinal">
+
+        <div class="resultado">
+
+            <div class="trofeu">
+                🏆
+            </div>
+
+            <h2>
+                Jogo concluído!
+            </h2>
+
+            <p>
+                Você completou o desafio
+                Caça às Proposições.
+            </p>
+
+            <div class="resultado-pontos">
+
+                ⭐ <span id="pontuacaoFinal">
+                    0
+                </span> pontos
+
+            </div>
+
+            <button
+                id="jogarNovamente"
+                class="botao-recomecar">
+
+                Jogar novamente
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script-tabela-verdade.js"></script>
+
+</body>
+
+</html>
