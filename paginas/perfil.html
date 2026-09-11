@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Meu Perfil | Central de Jogos</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         MENU SUPERIOR
+    ================================== -->
+
+    <header class="menu-superior">
+
+        <div class="logo-menu">
+            🎮 Central de Jogos
+        </div>
+
+
+        <nav class="navegacao">
+
+            <a href="index.html">
+                🏠 Início
+            </a>
+
+            <a href="perfil.html">
+                👤 Perfil
+            </a>
+
+            <a href="../paginas/progresso.html">
+                🏆 Progresso
+            </a>
+
+            <button id="botaoSair" class="botao-sair">
+                <a href="../index.html">
+                    ↪ Sair
+                </a>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =================================
+         PERFIL
+    ================================== -->
+
+    <main class="pagina-perfil">
+
+        <section class="perfil-container">
+
+            <div class="perfil-cabecalho">
+
+                <div class="avatar">
+
+                    👤
+
+                </div>
+
+
+                <h1>
+                    Meu Perfil
+                </h1>
+
+                <p>
+                    Confira suas informações.
+                </p>
+
+            </div>
+
+
+
+            <!-- INFORMAÇÕES DO ALUNO -->
+
+            <div class="informacoes-perfil">
+
+
+                <div class="informacao">
+
+                    <span class="icone-informacao">
+                        👤
+                    </span>
+
+                    <div>
+
+                        <span class="titulo-informacao">
+                            Nome
+                        </span>
+
+                        <strong id="nomeAluno">
+                            Carregando...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="informacao">
+
+                    <span class="icone-informacao">
+                        🎓
+                    </span>
+
+                    <div>
+
+                        <span class="titulo-informacao">
+                            Matrícula
+                        </span>
+
+                        <strong id="matriculaAluno">
+                            Carregando...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="informacao">
+
+                    <span class="icone-informacao">
+                        📧
+                    </span>
+
+                    <div>
+
+                        <span class="titulo-informacao">
+                            E-mail
+                        </span>
+
+                        <strong id="emailAluno">
+                            Não informado
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RESUMO -->
+
+            <div class="resumo-perfil">
+
+
+                <h2>
+                    🏆 Meu desempenho
+                </h2>
+
+
+                <div class="estatisticas-perfil">
+
+
+                    <div class="estatistica">
+
+                        <span>
+                            📝
+                        </span>
+
+                        <strong id="totalQuestoes">
+                            0
+                        </strong>
+
+                        <p>
+                            Questões respondidas
+                        </p>
+
+                    </div>
+
+
+                    <div class="estatistica">
+
+                        <span>
+                            ✅
+                        </span>
+
+                        <strong id="totalAcertos">
+                            0
+                        </strong>
+
+                        <p>
+                            Acertos
+                        </p>
+
+                    </div>
+
+
+                    <div class="estatistica">
+
+                        <span>
+                            ❌
+                        </span>
+
+                        <strong id="totalErros">
+                            0
+                        </strong>
+
+                        <p>
+                            Erros
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="../paginas/progresso.html"
+                class="botao-ver-progresso"
+            >
+
+                🏆 Ver meu progresso
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="../js/auth.js"></script>
+
+    <script src="../js/perfil.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Meu Progresso | Central de Jogos</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         MENU
+    ================================== -->
+
+    <header class="menu-superior">
+
+        <div class="logo-menu">
+            🎮 Central de Jogos
+        </div>
+
+
+        <nav class="navegacao">
+
+            <a href="../central/index.html">
+                🏠 Início
+            </a>
+
+            <a href="../paginas/perfil.html">
+                👤 Perfil
+            </a>
+
+            <a href="../paginas/progresso.html">
+                🏆 Progresso
+            </a>
+
+            <button
+                id="botaoSair"
+                class="botao-sair">
+
+                ↪ Sair
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =================================
+         PROGRESSO
+    ================================== -->
+
+    <main class="pagina-progresso">
+
+
+        <section class="progresso-container">
+
+
+            <header class="cabecalho-progresso">
+
+                <h1>
+                    🏆 Meu Progresso
+                </h1>
+
+                <p>
+                    Acompanhe seu desempenho nos jogos.
+                </p>
+
+            </header>
+
+
+
+            <!-- ESTATÍSTICAS GERAIS -->
+
+            <section class="estatisticas-progresso">
+
+
+                <div class="card-estatistica">
+
+                    <span>
+                        📝
+                    </span>
+
+                    <strong id="totalQuestoes">
+                        0
+                    </strong>
+
+                    <p>
+                        Questões respondidas
+                    </p>
+
+                </div>
+
+
+                <div class="card-estatistica">
+
+                    <span>
+                        ✅
+                    </span>
+
+                    <strong id="totalAcertos">
+                        0
+                    </strong>
+
+                    <p>
+                        Acertos
+                    </p>
+
+                </div>
+
+
+                <div class="card-estatistica">
+
+                    <span>
+                        ❌
+                    </span>
+
+                    <strong id="totalErros">
+                        0
+                    </strong>
+
+                    <p>
+                        Erros
+                    </p>
+
+                </div>
+
+
+                <div class="card-estatistica">
+
+                    <span>
+                        🎯
+                    </span>
+
+                    <strong id="aproveitamento">
+                        0%
+                    </strong>
+
+                    <p>
+                        Aproveitamento
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- BARRA DE PROGRESSO -->
+
+            <section class="barra-progresso-container">
+
+
+                <h2>
+                    Seu aproveitamento
+                </h2>
+
+
+                <div class="barra-progresso">
+
+                    <div
+                        id="barraProgresso"
+                        class="barra-preenchida">
+                    </div>
+
+                </div>
+
+
+                <p id="textoProgresso">
+                    0% de aproveitamento
+                </p>
+
+
+            </section>
+
+
+
+            <!-- DESEMPENHO POR JOGO -->
+
+            <section class="desempenho-jogos">
+
+
+                <h2>
+                    🎮 Desempenho por jogo
+                </h2>
+
+
+                <div id="listaJogos">
+
+                    <!-- Os jogos serão inseridos pelo JavaScript -->
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- HISTÓRICO -->
+
+            <section class="historico">
+
+
+                <h2>
+                    📋 Histórico de respostas
+                </h2>
+
+
+                <div
+                    id="historicoRespostas"
+                    class="lista-historico"
+                >
+
+                    <!-- Histórico inserido pelo JavaScript -->
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="../js/auth.js"></script>
+
+    <script src="../js/progresso.js"></script>
+
+</body>
+
+</html>
