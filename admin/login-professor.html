@@ -12,29 +12,26 @@
 
     <title>Professor | Central de Jogos</title>
 
-    <link rel="stylesheet" href="css/admin.css">
+    <link
+        rel="stylesheet"
+        href="css/admin.css"
+    >
 
 </head>
 
-
 <body>
-
 
     <main class="login-admin">
 
-
         <div class="cartao-admin">
-
 
             <div class="icone-admin">
                 🎓
             </div>
 
-
             <h1>
                 Área do Professor
             </h1>
-
 
             <p>
                 Acesse o painel administrativo
@@ -44,6 +41,7 @@
 
             <form id="loginProfessor">
 
+                <!-- E-MAIL -->
 
                 <div class="campo-admin">
 
@@ -61,6 +59,8 @@
                 </div>
 
 
+                <!-- SENHA -->
+
                 <div class="campo-admin">
 
                     <label for="senhaProfessor">
@@ -77,38 +77,43 @@
                 </div>
 
 
+                <!-- MENSAGEM -->
+
                 <div
                     id="mensagemAdmin"
-                    class="mensagem-admin">
-                </div>
+                    class="mensagem-admin"
+                ></div>
 
 
-                <button type="submit">
+                <!-- BOTÃO -->
 
-                    Entrar
-
+                <button type="submit"><a href="dashboard.html">
+                        Entrar
+                    </a>
                 </button>
-
+                    
 
             </form>
 
 
+            <!-- VOLTAR -->
+
             <a href="../index.html">
-
                 ← Voltar para login do aluno
-
             </a>
 
-
         </div>
-
 
     </main>
 
 
+    <!-- AUTENTICAÇÃO -->
+
     <script src="../js/auth.js"></script>
 
-    <script src="js/adminLogin.js"></script>
+    <!-- LOGIN DO PROFESSOR -->
+
+    <script src="js/admin.js"></script>
 
 </body>
 

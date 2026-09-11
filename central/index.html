@@ -2,134 +2,154 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Login | Central de Jogos</title>
+    <title>Central de Jogos</title>
 
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <nav class="navegacao-admin">
+
+        <a href="index.html">
+            🏠 Início
+        </a>
+
+        <a href="../paginas/perfil.html">
+            👤 Perfil
+        </a>
+
+        <a href="../paginas/progresso.html">
+            🏆 Progresso
+        </a>
+
+        <button id="botaoSair" class="botao-sair">
+            <a href="../index.html">
+                ↪ Sair
+            </a>
+        </button>
+    </nav>
 
 </head>
 
 <body>
 
-    <main class="pagina-login">
+    <main class="central">
 
-        <section class="lado-esquerdo">
+        <section class="cabecalho">
 
-            <div class="apresentacao">
+            <h1>🎮 Central de Jogos</h1>
 
-                <div class="logo">
-                    🎮
-                </div>
-
-                <h1>Central de Jogos</h1>
-
-                <p>
-                    Aprenda de uma forma divertida,
-                    interativa e diferente.
-                </p>
-
-                <div class="materias">
-
-                    <span>🧠 Lógica</span>
-                    <span>⚡ Álgebra</span>
-                    <span>🔵 Conjuntos</span>
-
-                </div>
-
-            </div>
+            <p>
+                Escolha um assunto e comece a jogar!
+            </p>
 
         </section>
 
 
-        <section class="lado-direito">
+        <section class="jogos-container">
 
-            <div class="login-container">
+            <!-- TABELA VERDADE -->
 
-                <h2>Bem-vindo!</h2>
+            <a href="telas/tabela-verdade.html"
+                class="card tabela">
 
-                <p class="subtitulo">
-                    Entre na sua conta para continuar
-                </p>
-
-
-                <form id="formLogin">
-
-                    <div class="campo">
-
-                        <label for="matricula">
-                            Matrícula
-                        </label>
-
-                        <input
-                            type="matricula"
-                            id="matricula"
-                            placeholder="Digite sua matrícula"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="campo">
-
-                        <label for="senha">
-                            Senha
-                        </label>
-
-                        <input
-                            type="password"
-                            id="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div
-                        id="mensagem"
-                        class="mensagem">
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="botao-entrar">
-
-                        Entrar
-
-                    </button>
-
-                </form>
-
-
-                <div class="separador">
-
-                    <span>ou</span>
-
+                <div class="icone">
+                    🧠
                 </div>
 
+                <h2>Tabelas-Verdade</h2>
 
-                <p class="cadastro-texto">
-
-                    Ainda não possui uma conta?
-
-                    <a href="../cadastro.html">
-                        Criar conta
-                    </a>
-
+                <p>
+                    Teste seus conhecimentos sobre lógica,
+                    tautologias e contradições.
                 </p>
 
+                <span class="botao">
+                    Jogar →
+                </span>
+
+            </a>
+
+
+            <!-- ALGEBRA BOOLEANA -->
+
+            <a href="telas/algebra-booleana.html"
+                class="card algebra">
+
+                <div class="icone">
+                    ⚡
+                </div>
+
+                <h2>Álgebra Booleana</h2>
+
+                <p>
+                    Resolva desafios com expressões
+                    e circuitos lógicos.
+                </p>
+
+                <span class="botao">
+                    Jogar →
+                </span>
+
+            </a>
+
+
+            <!-- CONJUNTOS -->
+
+            <a href="telas/conjuntos.html"
+                class="card conjuntos">
+
+                <div class="icone">
+                    🔵
+                </div>
+
+                <h2>Teoria dos Conjuntos</h2>
+
+                <p>
+                    Explore conjuntos, operações
+                    e desafios interativos.
+                </p>
+
+                <span class="botao">
+                    Jogar →
+                </span>
+
+            </a>
+
+        </section>
+
+
+        <section class="progresso">
+
+            <h2>🏆 Seu Progresso</h2>
+
+            <p>
+                Complete os jogos para acompanhar
+                sua evolução.
+            </p>
+
+            <div class="barra-progresso">
+
+                <div class="progresso-preenchido"></div>
+
             </div>
+
+            <p class="porcentagem">
+                0% concluído
+            </p>
 
         </section>
 
     </main>
 
 
-    <script src="../js/login.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quiz | Central de Jogos</title>
+
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+
+<body>
+
+    <main class="quiz">
+
+        <h1>🧠 Quiz de Álgebra Booleana</h1>
+
+        <!-- QUESTÃO -->
+        <div id="questaoContainer">
+
+            <h2 id="numeroQuestao">
+                Questão 1
+            </h2>
+
+            <p id="pergunta">
+                Carregando questão...
+            </p>
+
+            <!-- ALTERNATIVAS -->
+            <div id="alternativas">
+
+            </div>
+
+            <!-- BOTÃO -->
+            <button
+                id="botaoProxima"
+                style="display: none;"
+            >
+                Próxima questão →
+            </button>
+
+        </div>
+
+        <!-- RESULTADO -->
+        <div id="resultado" style="display: none;">
+
+            <h2>🎉 Quiz finalizado!</h2>
+
+            <p id="pontuacao"></p>
+
+            <button onclick="location.reload()">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="js/algebra-booleana.js"></script>
+
+</body>
+
+</html>

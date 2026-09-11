@@ -1,76 +1,42 @@
-const emailAdmin =
-    "professor@escola.com";
+const formLogin = document.getElementById("loginProfessor");
+const mensagem = document.getElementById("mensagemAdmin");
 
+formLogin.addEventListener("submit", function (event) {
 
-const senhaAdmin =
-    "123456";
+    event.preventDefault();
 
+    const email = document
+        .getElementById("emailProfessor")
+        .value
+        .trim();
 
-const formLoginProfessor =
-    document.getElementById(
-        "loginProfessor"
-    );
+    const senha = document
+        .getElementById("senhaProfessor")
+        .value;
 
+    // Dados de acesso do professor
+    const emailAdmin = "teofiloviturino@ifpe";
+    const senhaAdmin = "123456";
 
-formLoginProfessor.addEventListener(
-    "submit",
-    function (event) {
+    // Verificação
+    if (email === emailAdmin && senha === senhaAdmin) {
 
-        event.preventDefault();
+        // Salva que o professor está logado
+        localStorage.setItem("adminLogado", "true");
 
+        mensagem.textContent = "Login realizado com sucesso!";
+        mensagem.style.color = "#22c55e";
 
-        const email =
-            document.getElementById(
-                "teofiloviturino@ifpe"
-            ).value.trim();
+        // Vai para o Dashboard
+        setTimeout(function () {
+            window.location.href = "dashboard.html";
+        }, 500);
 
+    } else {
 
-        const senha =
-            document.getElementById(
-                "123456"
-            ).value;
-
-
-        const mensagem =
-            document.getElementById(
-                "mensagemAdmin"
-            );
-
-
-        if (
-            email === emailAdmin &&
-            senha === senhaAdmin
-        ) {
-
-            iniciarSessaoAdmin();
-
-
-            mensagem.textContent =
-                "Login realizado com sucesso!";
-
-
-            mensagem.style.color =
-                "#22c55e";
-
-
-            setTimeout(function () {
-
-                window.location.href =
-                    "dashboard.html";
-
-            }, 500);
-
-
-        } else {
-
-            mensagem.textContent =
-                "E-mail ou senha incorretos.";
-
-
-            mensagem.style.color =
-                "#ef4444";
-
-        }
+        mensagem.textContent = "E-mail ou senha incorretos.";
+        mensagem.style.color = "#ef4444";
 
     }
-);
+
+});
