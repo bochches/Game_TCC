@@ -11,7 +11,7 @@
 
     <title>Quiz | Central de Jogos</title>
 
-    <link rel="stylesheet" href="css/jogo.css">
+    <link rel="stylesheet" href="../telas/css/jogo.css">
 </head>
 
 <body>
@@ -20,46 +20,152 @@
 
         <h1>🧠 Quiz de Álgebra Booleana</h1>
 
-        <!-- QUESTÃO -->
-        <div id="questaoContainer">
+            <div class="pontuacao">
+                ⭐ <span id="pontos">0</span>
+            </div>
 
-            <h2 id="numeroQuestao">
-                Questão 1
-            </h2>
+        </header>
 
-            <p id="pergunta">
-                Carregando questão...
-            </p>
 
-            <!-- ALTERNATIVAS -->
-            <div id="alternativas">
+        <!-- PROGRESSO -->
+
+        <section class="progresso-container">
+
+            <div class="informacao-progresso">
+
+                <span id="numeroQuestao">
+                    Questão 1 de 10
+                </span>
 
             </div>
 
-            <!-- BOTÃO -->
-            <button
-                id="botaoProxima"
-                style="display: none;"
-            >
-                Próxima questão →
-            </button>
+            <div class="barra-progresso">
 
-        </div>
+                <div
+                    class="progresso"
+                    id="barraProgresso">
+                </div>
 
-        <!-- RESULTADO -->
-        <div id="resultado" style="display: none;">
+            </div>
 
-            <h2>🎉 Quiz finalizado!</h2>
+        </section>
 
-            <p id="pontuacao"></p>
 
-            <button onclick="location.reload()">
-                Jogar novamente
-            </button>
+        <!-- ÁREA DO JOGO -->
 
-        </div>
+        <section class="area-jogo">
+
+            <div class="cartao-questao">
+
+                <span class="categoria">
+                    DESAFIO LÓGICO
+                </span>
+
+                <!-- A QUESTÃO APARECERÁ AQUI -->
+
+                <div
+                    class="questao"
+                    id="textoQuestao">
+
+                </div>
+
+
+                <!-- ALTERNATIVAS -->
+
+                <div class="alternativas">
+
+                    <button
+                        class="alternativa"
+                        data-resposta="A">
+                    </button>
+
+                    <button
+                        class="alternativa"
+                        data-resposta="B">
+                    </button>
+
+                    <button
+                        class="alternativa"
+                        data-resposta="C">
+                    </button>
+
+                    <button
+                        class="alternativa"
+                        data-resposta="D">
+                    </button>
+
+                    <button
+                        class="alternativa"
+                        data-resposta="E">
+                    </button>
+
+                </div>
+
+                <!-- FEEDBACK -->
+
+                <div
+                    class="feedback"
+                    id="feedback">
+                </div>
+
+
+                <!-- BOTÃO PRÓXIMA -->
+
+                <button
+                    id="botaoProxima"
+                    class="botao-proxima">
+
+                    Próxima questão →
+
+                </button>
+
+            </div>
+
+        </section>
 
     </main>
+
+
+    <!-- TELA FINAL -->
+
+    <section
+        class="tela-final"
+        id="telaFinal">
+
+        <div class="resultado">
+
+            <div class="trofeu">
+                🏆
+            </div>
+
+            <h2>
+                Jogo concluído!
+            </h2>
+
+            <p>
+                Você completou o desafio
+                Algebra Booleana.
+            </p>
+
+            <div class="resultado-pontos">
+
+                ⭐ <span id="pontuacaoFinal">
+                    0
+                </span> pontos
+
+            </div>
+
+            <button
+                id="jogarNovamente"
+                class="botao-recomecar">
+
+                Jogar novamente
+
+            </button>
+
+        </div>
+
+    </section>
 
     <script src="js/algebra-booleana.js"></script>
 
