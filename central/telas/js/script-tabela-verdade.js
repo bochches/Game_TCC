@@ -11,24 +11,17 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Uma fórmula lógica possui 3 proposições simples diferentes: p, q e r. Quantas linhas terá sua tabela-verdade completa?",
-
+        pergunta: "Quantas linhas tem a tabela de (p ∨ ¬p) ∧ (q → q)?",
         alternativas: {
-            A: "3",
-            B: "6",
-            C: "8",
-            D: "9",
-            E: "12"
+            A: "8",
+            B: "16",
         },
 
-        resposta: "C",
+        resposta: "B",
 
         explicacoes: {
-            A: "3 é a quantidade de proposições simples, mas não é a quantidade de combinações possíveis. Para descobrir o número de linhas, usamos 2ⁿ.",
-            B: "6 não representa todas as combinações possíveis de três proposições. O cálculo correto é 2³ = 8.",
-            C: "O número de linhas é calculado por 2ⁿ. Como existem 3 proposições: 2³ = 8. Portanto, são necessárias 8 linhas para representar todas as combinações possíveis de V e F.",
-            D: "9 não é o resultado de 2³. Como existem 3 proposições, temos 2³ = 8 linhas.",
-            E: "12 não representa todas as combinações possíveis. Para 3 proposições, temos 2³ = 8 linhas."
+            A: "Oito linhas correspondem a três proposições distintas.",
+            B: "Apenas p e q são distintas; repetições não acrescentam variáveis.",
         }
     },
 
@@ -38,24 +31,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Considere p ∧ q. Em qual situação essa proposição será verdadeira?",
+        pergunta: "Uma tabela completa tem 64 linhas. Quantas variáveis distintas ela usa?",
 
         alternativas: {
-            A: "Quando apenas p for verdadeira.",
-            B: "Quando apenas q for verdadeira.",
-            C: "Quando p e q forem verdadeiras.",
-            D: "Quando p e q forem falsas.",
-            E: "Quando p e q tiverem valores diferentes."
+            A: "6",
+            B: "8",
         },
 
-        resposta: "C",
+        resposta: "A",
 
         explicacoes: {
-            A: "Na conjunção, não basta apenas p ser verdadeira. As duas proposições precisam ser verdadeiras.",
-            B: "Não basta apenas q ser verdadeira. p também precisa ser verdadeira.",
-            C: "O símbolo ∧ representa o conectivo E. Portanto, p ∧ q só será verdadeira quando p e q forem verdadeiras.",
-            D: "Quando p e q são falsas, p ∧ q também é falsa.",
-            E: "Ter valores diferentes não torna uma conjunção verdadeira. Em p ∧ q, as duas proposições precisam ser verdadeiras."
+            A: "Como 2⁶ = 64, são seis variáveis.",
+            B: "Oito variáveis geram 2⁸ = 256 linhas.",
         }
     },
 
@@ -65,24 +52,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Considere p ∨ q. Quando essa proposição é falsa?",
+        pergunta: "Para p, q e r, qual é a sequência da coluna p no padrão adotado?",
 
         alternativas: {
-            A: "Quando p e q forem verdadeiras.",
-            B: "Quando apenas p for verdadeira.",
-            C: "Quando apenas q for verdadeira.",
-            D: "Quando p e q forem falsas.",
-            E: "Nunca é falsa."
+            A: "V V V V F F F F.",
+            B: "V F V F V F V F.",
         },
 
-        resposta: "D",
+        resposta: "A",
 
         explicacoes: {
-            A: "Quando p e q são verdadeiras, p ∨ q também é verdadeira.",
-            B: "Quando p é verdadeira e q é falsa, p ∨ q continua sendo verdadeira.",
-            C: "Quando q é verdadeira e p é falsa, p ∨ q também é verdadeira.",
-            D: "O símbolo ∨ representa o OU. Uma disjunção só é falsa quando as duas proposições são falsas.",
-            E: "A expressão p ∨ q pode ser falsa. Isso acontece quando p e q são falsas."
+            A: "A primeira coluna mantém cada valor por quatro linhas.",
+            B: "A alternância a cada linha pertence à última coluna, r.",
         }
     },
 
@@ -92,24 +73,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Se a proposição p é verdadeira, qual é o valor de ¬p?",
+        pergunta: "Qual é a quarta linha para p, q e r?",
 
         alternativas: {
-            A: "Verdadeiro.",
-            B: "Falso.",
-            C: "Pode ser verdadeiro ou falso.",
-            D: "Não possui valor lógico.",
-            E: "Depende de q."
+            A: "V, F, F.",
+            B: "F, V, V.",
         },
 
-        resposta: "B",
+        resposta: "A",
 
         explicacoes: {
-            A: "O símbolo ¬ representa a negação. Quando p é verdadeira, ¬p é falsa.",
-            B: "A negação inverte o valor lógico da proposição. Se p = V, então ¬p = F.",
-            C: "Como sabemos que p é verdadeira, sua negação necessariamente será falsa.",
-            D: "¬p é uma proposição lógica e possui um valor lógico.",
-            E: "O valor de ¬p depende apenas do valor de p, não de uma proposição q."
+            A: "As quatro primeiras linhas mantêm p = V; a quarta tem q = F e r = F.",
+            B: "F, V, V é a quinta linha.",
         }
     },
 
@@ -119,24 +94,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Qual das expressões abaixo é uma tautologia?",
+        pergunta: "Uma ordem diferente das linhas pode produzir uma tabela correta?",
 
         alternativas: {
-            A: "p ∧ ¬p",
-            B: "p ∨ ¬p",
-            C: "p ∧ q",
-            D: "p ↔ ¬p",
-            E: "¬(p ∨ ¬p)"
+            A: "Sim, se incluir cada combinação exatamente uma vez.",
+            B: "Não, apenas o padrão adotado é válido.",
         },
 
-        resposta: "B",
+        resposta: "A",
 
         explicacoes: {
-            A: "p ∧ ¬p é sempre falsa, pois uma proposição não pode ser verdadeira e falsa ao mesmo tempo.",
-            B: "p ∨ ¬p é sempre verdadeira. Se p for verdadeira, p é verdadeira; se p for falsa, ¬p será verdadeira. Portanto, é uma tautologia.",
-            C: "p ∧ q pode ser verdadeira ou falsa, dependendo dos valores de p e q. Portanto, é uma contingência.",
-            D: "p ↔ ¬p é sempre falsa, pois p e ¬p sempre possuem valores diferentes.",
-            E: "¬(p ∨ ¬p) é a negação de uma tautologia e, por isso, é sempre falsa."
+            A: "A validade depende de cobrir todas as combinações e calcular corretamente as fórmulas.",
+            B: "O padrão canônico facilita a organização, mas não é a única ordem possível.",
         }
     },
 
@@ -146,24 +115,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Qual das expressões abaixo representa uma contradição?",
+        pergunta: "Qual fórmula equivale a p → q?",
 
         alternativas: {
-            A: "p ∨ ¬p",
-            B: "p → p",
-            C: "p ∧ ¬p",
-            D: "p ∨ q",
-            E: "p ↔ p"
+            A: "¬p ∨ q.",
+            B: "p ∨ ¬q.",
         },
 
         resposta: "C",
 
         explicacoes: {
-            A: "p ∨ ¬p é sempre verdadeira. Portanto, é uma tautologia.",
-            B: "p → p é sempre verdadeira, independentemente do valor de p.",
-            C: "p ∧ ¬p é sempre falsa. Se p é verdadeira, ¬p é falsa; se p é falsa, ¬p é verdadeira. Assim, a conjunção nunca pode ser verdadeira.",
-            D: "p ∨ q pode ser verdadeira ou falsa, dependendo dos valores das proposições. Portanto, é uma contingência.",
-            E: "p ↔ p é sempre verdadeira, pois uma proposição sempre possui o mesmo valor que ela própria."
+            A: "Ambas são falsas apenas quando p = V e q = F.",
+            B: "A opção errada equivale à condicional inversa q → p.",
         }
     },
 
@@ -173,25 +136,19 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Considere a proposição p ∧ q. Como ela deve ser classificada?",
-
+        pergunta: "Quando p → q é falsa?", 
+        
         alternativas: {
-            A: "Tautologia.",
-            B: "Contradição.",
-            C: "Contingência.",
-            D: "Equivalência.",
-            E: "Negação."
+            A: "Quando p = F e q = V.",
+            B: "Quando p = V e q = F.",
         },
 
-        resposta: "C",
+        resposta: "B",
 
         explicacoes: {
-            A: "p ∧ q não é sempre verdadeira. Ela só é verdadeira quando p e q são verdadeiras.",
-            B: "p ∧ q não é sempre falsa. Quando p e q são verdadeiras, o resultado é verdadeiro.",
-            C: "p ∧ q é uma contingência porque pode ser verdadeira em algumas situações e falsa em outras.",
-            D: "Equivalência é uma relação entre duas proposições que possuem os mesmos valores lógicos em todas as linhas.",
-            E: "Negação é uma operação lógica representada pelo símbolo ¬."
-        }
+            A: "Com antecedente falso, a condicional material é verdadeira.",
+            B: " A condicional falha apenas com antecedente verdadeiro e consequente falso.",
+        },
     },
 
 
@@ -200,24 +157,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Considere p → q. Em qual situação a implicação é falsa?",
+        pergunta: "Qual é o valor de (p → q) → (q → p) para p = F e q = V?",
 
         alternativas: {
-            A: "p = V e q = V.",
-            B: "p = V e q = F.",
-            C: "p = F e q = V.",
-            D: "p = F e q = F.",
-            E: "A implicação nunca é falsa."
+            A: "V.",
+            B: "F.",            
         },
 
         resposta: "B",
 
         explicacoes: {
-            A: "V → V é verdadeiro.",
-            B: "A implicação p → q só é falsa quando p é verdadeira e q é falsa. Essa é uma das regras mais importantes da tabela-verdade.",
-            C: "F → V é considerado verdadeiro na lógica proposicional.",
-            D: "F → F também é considerado verdadeiro.",
-            E: "Uma implicação pode ser falsa. Isso acontece exatamente quando temos V → F."
+            A: "Uma condicional externa com valores V → F não é verdadeira.",
+            B: "p → q é V e q → p é F; a condicional externa é V → F.",
         }
     },
 
@@ -227,24 +178,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Duas proposições são logicamente equivalentes quando:",
+        pergunta: "Como classificar (p → q) → (q → p)?",
 
         alternativas: {
-            A: "Possuem o mesmo número de proposições simples.",
-            B: "Possuem sempre o mesmo tamanho de fórmula.",
-            C: "Possuem a mesma tabela-verdade.",
-            D: "Possuem necessariamente os mesmos conectivos.",
-            E: "São sempre tautologias."
+            A: "Contingência.",
+            B: "Tautologia.",
         },
 
-        resposta: "C",
+        resposta: "A",
 
         explicacoes: {
-            A: "Ter a mesma quantidade de proposições simples não garante que duas fórmulas sejam equivalentes.",
-            B: "Duas proposições equivalentes podem possuir tamanhos diferentes.",
-            C: "Duas proposições são logicamente equivalentes quando apresentam os mesmos valores lógicos em todas as combinações possíveis.",
-            D: "Duas expressões podem utilizar conectivos diferentes e ainda assim serem logicamente equivalentes.",
-            E: "Uma equivalência não significa que as proposições sejam necessariamente tautologias."
+            A: "É falsa em p = F, q = V e verdadeira em p = V, q = V.",
+            B: "A existência de uma linha falsa impede que seja tautologia.",
         }
     },
 
@@ -254,24 +199,18 @@ const questoes = [
     ===================================== */
 
     {
-        pergunta: "Considere o argumento: Se o servidor cair, o alerta será enviado. O alerta não foi enviado. Logo, o servidor não caiu. Esse argumento é:",
+        pergunta: "Qual premissa adicional permite ligar p → q e g → r para obter p → r?",
 
         alternativas: {
-            A: "Inválido, porque p → q pode ser falso.",
-            B: "Válido, pois corresponde ao modus tollens.",
-            C: "Inválido, porque a conclusão deveria ser q.",
-            D: "Uma contradição.",
-            E: "Uma contingência."
+            A: "r → p.",
+            B: "q → g.",
         },
 
         resposta: "B",
 
         explicacoes: {
-            A: "O fato de uma implicação poder ser falsa em determinada combinação não torna o argumento inválido. É necessário analisar a relação entre as premissas e a conclusão.",
-            B: "O argumento possui a forma: p → q, ¬q, portanto ¬p. Essa estrutura é conhecida como modus tollens e representa uma forma válida de inferência.",
-            C: "A conclusão correta é ¬p. Se p implica q e q não aconteceu, podemos concluir que p também não aconteceu.",
-            D: "O argumento não é uma contradição. Estamos analisando a validade de um argumento lógico.",
-            E: "Contingência é uma classificação de proposições. Neste caso, estamos analisando a validade de um argumento."
+            A: "Com p = V, q = V, g = F e r = F, até r → p é V, mas p → r continua F.",
+            B: "O encadeamento fica p → q → g → r.",
         }
     }
 ];
